@@ -75,19 +75,20 @@
 
     <div class="form-wrapper">
         <div class="form-style">
-            <form>
+            <form method="post">
                 <fieldset>
                     <legend><span class="number">1</span> Player Information</legend>
-                    <input type="text" name="field1" placeholder="Your Name *">
-                    <input type="email" name="field2" placeholder="Your Email *">
+                    <input type="text" id="name" required name="field1" placeholder="Your Name *">
+                    <input type="email" id="email" required name="field2" placeholder="Your Email *">
                     <textarea name="field3" placeholder="About yourself"></textarea>
                 </fieldset>
                 <fieldset>
                     <legend><span class="number">2</span> Additional Info</legend>
-                    <textarea name="field3" placeholder="About Your Views on the Game"></textarea>
+                    <textarea name="field3" required placeholder="About Your Views on the Game*"></textarea>
                 </fieldset>
                 <input type="submit" value="Apply" />
             </form>
+            <p style="color: red" id="error-msg"><br></p>
         </div>
     </div>
 

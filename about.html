@@ -132,6 +132,13 @@
             </div>
         </div>
     </div>
+    <div class="start-wrapper" id="about-game">
+        <div class="card">
+            
+        </div>
+    </div>
+
+
     <footer class="footer">
             <div id="footer-top">
                 <div id="footer-text-wrapper">
@@ -169,6 +176,26 @@
     </footer>
 
     <script src="js/menu.js"></script>
+    <script>
+        // For Stopping the SVG animation of the apex logo
+        function stopSVG(){
+            var y=window.pageYOffset;
+            console.log(y);
+
+            if(y>700){
+                document.getElementById('logo-bar-1').classList.add('no-animation');
+                document.getElementById('logo-bar-2').classList.add('no-animation');
+                document.getElementById('logo-bar-3').classList.add('no-animation');
+            }
+            else if(document.getElementById('logo-bar-1').classList.contains('no-animation')){
+                document.getElementById('logo-bar-1').classList.remove('no-animation');
+                document.getElementById('logo-bar-2').classList.remove('no-animation');
+                document.getElementById('logo-bar-3').classList.remove('no-animation');
+            }
+        }
+
+        window.addEventListener('scroll',stopSVG);
+    </script>
 </body>
 
 </html>

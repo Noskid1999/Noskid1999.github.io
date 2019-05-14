@@ -92,3 +92,10 @@
 	background: rgb(110, 39, 43);
 	cursor: crosshair;
 }
+
+input:valid{
+	border-color: green!important;
+}
+input:invalid{
+	border-color: red!important;
+}

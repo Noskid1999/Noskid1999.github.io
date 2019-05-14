@@ -13,7 +13,7 @@
 }
 .start-wrapper{
     width: 100%;
-    padding: 60px 5%;
+    padding: 0px 5%;
     height: 754px;
     display: flex;
     box-sizing: border-box;
@@ -21,6 +21,8 @@
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    position: sticky;
+    top: 60px;
 }
 .svg-logo-wrapper{
     width: 40%;
@@ -57,6 +59,10 @@
     height: 527px;
     background-color: rgb(226, 222, 213);
     justify-content: flex-start;
+    padding-top: 60px;
+}
+#about-game{
+    background-color: rgb(226, 222, 213);
 }
 #logo-bar-1,#logo-bar-2,#logo-bar-3{
     transform: translateY(-100%);
@@ -115,4 +121,11 @@
     75%{}
     87.5%{transform: translateY(0%);}
     100%{transform: translateY(-100%);}
+}
+.no-animation{
+    animation:none!important;
+}
+.footer{
+    position: sticky;
+    top: 60px;
 }
