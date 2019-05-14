@@ -1,0 +1,139 @@
+.footer{
+    width: 100%;
+    display: grid;
+    height: 695px;
+    grid-template-rows: 308px 386px;
+    z-index: 2;
+}
+.footer #footer-top{
+    background-image: url("../images/red-bg.jpg");
+    background-size: cover;   
+}
+.footer #footer-top #footer-text-wrapper{
+    display:grid;
+    grid-template-rows: 1fr .5fr 1fr;
+    grid-row-gap: 1vw;
+    justify-items: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+#footer-text-wrapper h1{
+    font-family: 'Apex MK2 Condensed';
+    font-size: 5vw;
+}
+#footer-text-wrapper>p{
+    font-family: 'Seravek-Normal';
+    font-size: 1.75vw;
+}
+#footer-text-wrapper #play-for-free{
+     border: 0.25vw solid #fff;
+    background: transparent;
+    width: 100%;
+    font-family: 'Seravek-Normal';
+    font-size: 3vw;
+    color: #fff;
+    cursor: crosshair;
+    color:rgb(230, 227, 220);
+    transition-duration: .5s;
+    border-radius: 1vw;
+    justify-items: center;
+    padding: 3%;
+}
+#footer-text-wrapper #play-for-free:hover{
+    background-color: #fff;
+    color:#000;
+}
+
+#play-for-free p{
+    text-align: center;
+}
+.footer #footer-bottom{
+    background-color: rgba(37, 37, 37,1);
+
+    padding: 2% 15%;
+    display:grid;
+
+    grid-template-rows: 35% 65%;
+}
+#footer-bottom #sub-menu{
+    display:grid;
+    grid-template-columns: 70% 30%;
+}
+#footer-bottom #sub-menu #options ul{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1vw;
+    width: 100%;
+}
+
+#sub-menu #options a{
+    font-family: 'Seravek-Normal';
+    font-size: 1.5vw;
+    color: #fff;
+}
+#options li{
+    list-style: none;
+}
+#sub-menu #options a:hover{
+    color: rgb(156, 55, 50);
+}
+#social-media{
+    color: #fff;
+    font-size: 2vw;
+}
+#social-media p{
+    font-family: 'Apex MK2 Condensed';
+    font-size: 1vw;
+}
+#social-media a:hover{
+    color: rgb(156, 55, 50);
+}
+#footer-img {
+    display: grid;
+    width: 30%;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10%;
+}
+#footer-img img{
+    align-self: center;
+}
+@media screen and (max-width:1024px){
+    
+    #sub-menu #options a{
+        font-size: 2vw;
+    }
+    #social-media{
+        font-size: 2.5vw;
+    }
+    #social-media p{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width:770px){
+    #footer-text-wrapper h1{
+        font-size: 8vw;
+    }
+    #footer-text-wrapper p{
+        font-size: 4vw;
+    }
+    #footer-text-wrapper #play-for-free p{
+        font-size: 7vw;
+    }
+    .footer #footer-bottom{
+        padding: 2% 5%;
+    }
+    #footer-bottom #sub-menu{
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+    }
+    #sub-menu #options a{
+        font-size :3vw;
+    }
+    #social-media{
+        font-size: 4vw;        
+        padding-left: 50%;
+    }
+    #social-media p{
+        font-size: 3vw;
+    }
+}

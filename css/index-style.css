@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Section A  */
+#section-A{
+    position: fixed;
+    top: 3.75rem;
+    height: 26.25rem;
+    width: 100%;
+    background-image: url("../images/octane-header-full.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#left-wrapper{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 25rem;
+    text-align: center;
+}
+#apex-logo-front img{
+    height: 100%;
+}
+#front-logo-bottom{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    font-family: 'Seravek-Normal';
+    font-size: 1vw;
+    color: #fff;
+    text-align: center;
+}
+#play-now-button{
+    font-size: 3vw;
+    line-height: 6vw;
+    background: none;
+    border: .25vw solid white;
+    border-radius: 1vw;
+    transition-duration: .5s;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#play-now-button:hover{
+    border: .5vw solid #fff;
+    background-color: #fff;
+    color: #000;
+    transition-duration: .5s;
+}
+/* Make Section A responsive */
+@media screen and (max-width:1024px){
+    #section-A{
+        background-image: url("../images/octane-header-1024w.jpg");
+    }
+    #front-logo-bottom{
+        /* padding-left: 20%; */
+        font-size: 1.2vw;
+    }
+    #play-now-button{
+        font-size: 3vw;
+        line-height: 6vw;
+    }
+}
+@media screen and (max-width: 800px){
+    #section-A{
+        background-position-x: 50%;
+    }
+    #play-now-button{
+        font-size: 5vw;
+        line-height: 10vw;
+    }
+}
+@media screen and (max-width:540px){
+    #section-A{
+        background-image: url("../images/octane-header-cropped-540w.jpg");
+        background-position-x: 0;
+        grid-template-columns: 1fr;
+    }
+    #front-logo-bottom{
+        font-size: 2vw;
+    }
+    #play-now-button{
+        border: .5vw solid #fff;
+        font-size: 4vw;
+        line-height: 8vw;
+    }
+}
+
+
+/* Section B */
+
+#section-B{
+    position: absolute;
+    top: 30rem;
+    height: 37.5rem;
+    width: 100%;
+    background-image: url("../images/octane-large-1920w.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#octane-wrapper{
+    display: grid;
+    grid-column: 2/3;
+    grid-template-rows: 25% 15% 20% 15% 25%;
+    height: 37.5rem;
+    color: #fff;
+    text-align: center;
+}
+#octane-header{
+    grid-row: 2/3;
+    font-family: 'Apex MK2 Condensed';
+    font-size: 1.5vw;
+}
+#octane-description{
+    grid-row:3/4;
+    font-family: 'Seravek-Normal';
+    font-size: 2vw;
+}
+#octane-button-wrapper{
+    grid-row: 4/5;
+    padding-left: 0;
+    justify-items: center;
+    
+}
+@media screen and (max-width:1024px){
+    #section-B{
+        background-image: url("../images/octane-cropped-1024w.jpg");
+    }
+    #octane-header{
+        font-size: 2vw;
+    }
+    #octane-description{
+        font-size: 2.5vw;
+    }
+}
+@media screen and (max-width:770px){
+    #section-B{
+        background-image: url("../images/octane-cropped-770w.jpg");
+        grid-template-columns: 1fr;
+    }
+    #octane-header{
+        font-size: 3vw;
+    }
+    #octane-description{
+        font-size: 3.5vw;
+    }
+    #octane-wrapper{
+        grid-column: 1/2;
+    }
+}
+@media screen and (max-width:540px){
+    #section-B{
+        background-image: url("../images/octane-cropped-540w.jpg");
+        grid-template-columns: 1fr;
+    }
+    #octane-header{
+        font-size: 3vw;
+    }
+    #octane-description{
+        font-size: 3.5vw;
+    }
+    #octane-wrapper{
+        grid-column: 1/2;
+    }
+}
+
+/* Section C */
+#section-C{
+    position: absolute;
+    top: 1080px;
+    height: 694px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr repeat(3,2fr) 1fr;
+}
+#section-C video{
+    grid-column: 1/6;
+    grid-row: 1/2;
+    width: 100%;
+    height: 694px;
+    object-fit: fill;
+    overflow: hidden;
+    z-index: 1;
+}
+#video-alt{
+    grid-column: 1/6;
+    grid-row: 1/2;
+    width: 100%;
+    height:694px;
+    visibility: hidden;
+}
+#evolution-of-battle-royale{
+    grid-column: 2/5;
+    grid-row: 1/2;
+    height: 694px;
+    color: #fff;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 7fr;
+}
+#evolution-of-battle-royale h1{
+    
+    font-family: 'Apex MK2 Condensed';
+    text-align: center;
+}
+#evolution-of-battle-royale>h1{
+    padding-top: 2.5%;
+    font-size:3.5vw;
+}
+#evolution-of-battle-royale p{
+    font-family: 'Seravek-Normal';
+    text-align: center;
+}
+#evolution-of-battle-royale>p{
+    padding-top: 2.5%;
+    font-size: 1.75vw;
+}
+#evolution-of-battle-royale .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2% 0;
+}
+#evolution-of-battle-royale .card{
+    display: grid;
+    padding: 0 7%;
+    grid-template-rows: 50% 15% 35%;
+    justify-items: center;
+}
+#evolution-of-battle-royale .card img{
+    width: 100%;
+}
+.card h1{
+    font-size: 2.25vw;
+}
+.card p{
+    font-size: 1.25vw;
+}
+@media screen and (max-width:1456px){
+    #section-C{
+        grid-template-columns: repeat(3,2fr);
+    }
+    #evolution-of-battle-royale{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    #section-C video{
+        visibility: hidden;
+    }
+    #video-alt{
+        visibility: visible;
+        background-image: url("../images/video-alt-1456w.jpg");
+        background-size: cover;
+    }
+    #evolution-of-battle-royale .card img{
+        width: 80%;
+    }
+    .card h1{
+        font-size: 3vw;
+    }
+    .card p{
+        font-size: 1.5vw;
+    }
+}
+@media screen and (max-width:1024px){
+    #section-C{
+        height: 1044px;
+        grid-template-columns: 1fr repeat(3,2fr) 1fr;
+    }
+    #evolution-of-battle-royale{
+        grid-column: 1/6;
+        grid-row: 1/2;
+        height: 1044px;
+        grid-template-rows: 1fr 1fr 14fr;
+    }
+    #evolution-of-battle-royale .card-wrapper{
+        grid-template-columns: 1fr 1fr;
+        grid-row: 3/4;
+    }
+    #evolution-of-battle-royale .card{
+        text-align: center;
+        justify-items: center;
+    }
+    #evolution-of-battle-royale .card img{
+        width: 70%;
+    }
+    #card3{
+        grid-column:1/3;
+        grid-row: 2/3;
+    }
+    #card3 img{
+        width: 35% !important;
+    }
+    #video-alt{
+        height: 1044px;
+        background-image: url("../images/video-alt-1024w.jpg");
+    }
+    .card h1{
+        font-size: 4vw;
+    }
+    .card p{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width:700px){
+    #evolution-of-battle-royale>h1{
+        font-size: 6vw;
+    }
+    #evolution-of-battle-royale>p{
+        padding: 0 1%;
+        font-size: 3vw;
+    }
+    .card img{
+        padding-top: 10%;
+    }
+    .card h1{
+        font-size: 5vw;
+    }
+    .card p{
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width:540px){
+    #evolution-of-battle-royale>h1{
+        font-size: 6vw;
+    }
+    #evolution-of-battle-royale>p{
+        padding: 0 1%;
+        font-size: 3vw;
+    }
+    .card img{
+        padding-top: 30%;
+    }
+    .card h1{
+        font-size: 5vw;
+    }
+    .card p{
+        font-size: 3vw;
+    }
+    #card3 img{
+        padding-top: 25%;
+    }
+}
+
+/* Section-D */
+
+#section-D{
+    position: absolute;
+    top:1774px;
+    width: 100%;
+    display: grid;
+    height: 880px;
+}
+#section-D  #legends-bg-wrapper{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    height:880px;
+}
+#legends-bg-wrapper img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#section-D #legends-text{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-items: center;
+    height: 880px;
+    display:grid;
+    grid-template-rows: 1fr 1fr 7fr;   
+    grid-template-columns: 1fr;
+}
+#legends-text h1{
+    padding-top: 2.5%;
+    font-family: 'Apex MK2 Condensed';
+    font-size: 3vw;
+}
+#legends-text p{
+    font-family: 'Seravek-Normal';
+    font-size: 2vw;
+    padding-top: 1%;
+}
+#legends-text h1, #legends-text p{
+    text-align: center;
+}
+@media screen and (max-width: 1024px){
+    #section-D{
+        top: 2124px;
+    }
+    #legends-text h1{
+        font-size: 4vw;
+    }
+    #legends-text p{
+        font-size: 2.5vw;
+    }
+}
+@media screen and (max-width:770px){
+    #legends-text h1{
+        font-size: 5vw;
+    }
+    #legends-text p{
+        font-size: 3vw;
+    }
+}
+
+
+/* Footer */
+footer{
+    position: absolute;
+    top:2654px;
+}

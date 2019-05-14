@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.video-wrapper{
+    position: fixed;
+    top:60px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.start-wrapper{
+    width: 100%;
+    padding: 60px 5%;
+    height: 754px;
+    display: flex;
+    box-sizing: border-box;
+    z-index: 1;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.svg-logo-wrapper{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    height: 40%;
+}
+.legend-img{
+    width: 50%;
+    height: 60%;
+}
+.legend-right{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+.text-wrap{
+    width:100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+}
+.text-wrap p{
+    text-align: center;
+    font-family: 'Seravek-Normal';
+    font-size: 2vw;
+}
+.legend-img img{width: 100%;}
+#second-page{
+    height: 527px;
+    background-color: rgb(226, 222, 213);
+    justify-content: flex-start;
+}
+#logo-bar-1,#logo-bar-2,#logo-bar-3{
+    transform: translateY(-100%);
+}
+#logo-bar-1{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: topToBottom1 5s ease-out infinite;
+}
+#logo-bar-2{
+    animation: topToBottom2 5s  ease-out infinite;
+}
+#logo-bar-3{
+    animation: topToBottom3 5s  ease-out infinite;
+}
+#apex-logo-svg {
+    width: 100%;
+}
+@keyframes topToBottom1{
+    0%{transform: translateY(-100%);}
+    12.5%{transform: translateY(0%);}
+    25%{}
+    37.5%{}
+    50%{}
+    62.5%{transform: translateY(0%);}
+    75%{transform: translateY(-100%);}
+    87.5%{}
+    100%{}
+}
+@keyframes topToBottom2{
+    0%{}
+    12.5%{transform: translateY(-100%);}
+    25%{transform: translateY(0%);}
+    37.5%{}
+    50%{}
+    62.5%{}
+    75%{transform: translateY(0%);}
+    87.5%{transform: translateY(-100%);}
+    100%{}
+}
+@keyframes topToBottom3{
+    0%{}
+    25%{transform: translateY(-100%);}
+    37.5%{transform: translateY(0%);}
+    50%{}
+    62.5%{}
+    75%{}
+    87.5%{transform: translateY(0%);}
+    100%{transform: translateY(-100%);}
+}
+@keyframes appear{
+    0%{}
+    25%{}
+    37.5%{opacity: 0;}
+    50%{opacity: 1;}
+    62.5%{opacity: 0;}
+    75%{}
+    87.5%{transform: translateY(0%);}
+    100%{transform: translateY(-100%);}
+}

@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>L</title>
+    <meta name="description" content="Apex Legends - The Next Revolution of Battle Royale">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="css/header-style.css">
+    <link rel="stylesheet" type="text/css" href="css/media-style.css">
+    <link rel="stylesheet" type="text/css" href="css/footer-style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+            <div class="button-wrapper">
+                <a href="#"><div class="button">DOWNLOAD FOR FREE</div></a>
+            </div>
+            <ul class="big-menu">
+                <li id="apex-logo">
+                    <img src="images/apex-white-menu-logo.png" alt="Apex Logo">
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="legends.html">Legends</a>
+                </li>
+                <li>
+                    <a href="media.html">MEDIA </a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>                   
+                <li id="apex-text-logo">
+                    <img src="images/apex-white-nav-logo.svg" alt="ApexWhite">
+                </li>
+            </ul>
+            <div class="hamburger-container" onclick="myFunction(this);appearMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="hamburger-menu" id="vertical-menu">
+                <ul>
+
+                        <li> 
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li> 
+                            <a href="about.html">About</a>
+                        </li>
+                        <li> 
+                            <a href="legends.html">Legends</a>
+                        </li>
+                        <li> 
+                            <a href="media.html">MEDIA</a>
+                        </li>
+                        <li> 
+                            <a href="contact.html">CONTACT</a>
+                        </li>
+                                            
+                </ul>
+            </div>
+    </header>
+
+    <button class="left-arrow" onclick="left();"><i class="fas fa-caret-left"></i></button>
+    <button class="right-arrow" onclick="right();"><i class="fas fa-caret-right"></i></button>
+    <div class="image-gallery">
+        <div id="big-image">
+            <img src="images/media/default3.jpg" id="big-img" alt="Big Image">
+        </div>
+        <div class="small-image" id="small-image1">
+            <img src="images/media/default1.jpg" id="small-img1" alt="Small Image 1" onclick="changeMain(0);">
+        </div>
+        <div class="small-image" id="small-image2">
+            <img src="images/media/default2.jpg" id="small-img2" alt="Small Image 2" onclick="changeMain(1);">
+        </div>
+        <div class="small-image" id="small-image3">
+            <img src="images/media/default3.jpg" id="small-img3" alt="Small Image 3" onclick="changeMain(2);">
+        </div>
+        <div class="small-image" id="small-image4">
+            <img src="images/media/default4.jpg" id="small-img4" alt="Small Image 4" onclick="changeMain(3);">
+        </div>
+        <div class="small-image" id="small-image5">
+            <img src="images/media/default5.jpg" id="small-img5" alt="Small Image 5" onclick="changeMain(4);">
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div id="footer-top">
+            <div id="footer-text-wrapper">
+                <h1>PLAY FOR FREE</h1>
+                <p>On Play Station 4, Xbox One and Origin on PC</p>
+                <a href="#">
+                    <div id="play-for-free">
+                        <p>PLAY FREE NOW</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <div id="sub-menu">
+                <div id="options">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="legends.html">LEGENDS</a></li>
+                        <li><a href="media.html">MEDIA</a></li>
+                        <li><a href="CONTACT.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div id="social-media">
+                    <p>JOIN THE CONVERSATION</p><br>
+                    <a href="https://twitter.com/PlayApex"><i class="fab fa-twitter"></i></a> &nbsp;&nbsp;&nbsp;
+                    <a href="https://www.twitch.tv/playapex"><i class="fab fa-twitch"></i></a> &nbsp;&nbsp;&nbsp;
+                    <a href="https://www.facebook.com/playapex"><i class="fab fa-facebook-f"></i></a> &nbsp;&nbsp;&nbsp;
+                    <a href="https://www.youtube.com/playapex"><i class="fab fa-youtube"></i></a> &nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+            <div id="footer-img">
+                <img src="images/apex-logo.png" alt="Apex Logo">
+                <img src="images/respawn-logo.png" alt="Respawn Logo">
+            </div>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script>
+    var images=[
+        ["default1","default2","default3","default4","default5",],
+        ["bangalore1","bangalore2","bangalore3","bangalore4","bangalore5",],
+        ["bloodhound1","bloodhound2","bloodhound3","bloodhound4","bloodhound5",]
+    ]
+    var x=0;
+    
+    
+    function changeMain(y){
+        document.getElementById('big-img').src="images/media/"+images[x][y]+".jpg";
+        console.log("hello");
+    }
+    function updateImages(){
+        document.getElementById('big-img').src="images/media/"+images[x][2]+".jpg";
+        document.getElementById('small-img1').src="images/media/"+images[x][0]+".jpg";
+        document.getElementById('small-img2').src="images/media/"+images[x][1]+".jpg";
+        document.getElementById('small-img3').src="images/media/"+images[x][2]+".jpg";
+        document.getElementById('small-img4').src="images/media/"+images[x][3]+".jpg";
+        document.getElementById('small-img5').src="images/media/"+images[x][4]+".jpg";   
+    }
+    function right(){
+        x++;
+        if(x>2){x=0;}
+        console.log(x);
+        updateImages();
+        
+    }
+    function left(){
+        x--;
+        if(x<0){x=2;}
+        console.log(x);
+        updateImages();
+    }
+    </script>
+</body>
+</html>
