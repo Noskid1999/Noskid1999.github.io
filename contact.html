@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Apex Legends - The Next Revolution of Battle Royale</title>
+    <title>Contact - Apex Legends</title>
+    <link rel = "icon" type = "image/png" href = "images/title-logo.png">
     <meta name="description" content="Apex Legends - The Next Revolution of Battle Royale">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -75,7 +76,7 @@
 
     <div class="form-wrapper">
         <div class="form-style">
-            <form method="post">
+            <form method="post" onsubmit="complete()" action="contact.html">
                 <fieldset>
                     <legend><span class="number">1</span> Player Information</legend>
                     <input type="text" id="name" required name="field1" placeholder="Your Name *">
@@ -133,6 +134,11 @@
 
 
     <script src="js/menu.js"></script>
+    <script>
+        function complete(){
+            alert("Thank you!");
+        }
+    </script>
 </body>
 
 </html>
