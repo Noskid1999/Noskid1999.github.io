@@ -8,7 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet"
         type="text/css">
     <link rel="stylesheet" href="css/accessibilityTroubleshooting-style.css">
-
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -53,7 +56,7 @@
                 in urban areas as they are in the countryside. Different habitats encourange different behaviour
                 however, as you'll find out below. The below table also gives you some useful facts about bears.</p>
 
-            <table summary="Useful statistics about wild and urban bears">
+            <table summary="Information on Wild and Urban Bears">
                 <thead>
                     <tr>
                         <th scope="col">Bear Type</th>
@@ -92,17 +95,17 @@
                 cottages. The below image shows <span id="wild-label">a big brown wild bear, standing in a river looking
                     for fish to eat</span>.</p>
 
-            <img src="images/accessibilityTroubleshooting/wild-bear.jpg" aria-labelledby="wild-label">
+            <img src="images/accessibilityTroubleshooting/wild-bear.jpg" alt="wild-label">
 
             <p>Urban (gentrified) bears on the other hand have largely abandoned the old ways. They will hunt other
                 urban creatures if necessary (including other predators like rats and foxes), but prefer to scavenge
                 from readily available urban food outlets like dumpsters, bins, and fast food joints. When food has
                 proven scarce, urban bears have even been known to break into people's kitchens and steal essentials
-                like baked beans, ready meals, and microwave ovens. Below you can see <span id="urban-label">an urban
+                like baked beans, ready meals, and microwave ovens. Below you can see an urban
                     polar bear, looking through the railings of his garden while contemplating whether to eat at Nandos
-                    or Taco Bell</span>.</p>
+                    or Taco Bell.</p>
 
-            <img src="images/accessibilityTroubleshooting/urban-bear.jpg" aria-labelledby="urban-label">
+            <img src="images/accessibilityTroubleshooting/urban-bear.jpg" alt="urban-label">
 
             <p>Urban bears will sleep anywhere they can, from bus shelters and parks, to the toilets in McDonalds, to
                 their own apartment.</p>
