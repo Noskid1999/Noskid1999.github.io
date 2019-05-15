@@ -80,7 +80,7 @@ Ball.prototype.collisionDetect = function() {
       var dx = this.x - balls[j].x;
       var dy = this.y - balls[j].y;
       var distance = Math.sqrt(dx * dx + dy * dy);
-
+// collision if distance is smaller than sum of balls radius and ball has not been disappeared
       if (distance < this.size + balls[j].size && balls[j].exists) {
         balls[j].color = this.color = 'rgb(' + random(0,255) + ',' + random(0,255) + ',' + random(0,255) +')';
       }
@@ -172,7 +172,7 @@ EvilCircle.prototype.collisionDetect = function() {
 
 
 
-// define array to store balls and populate it
+// define array to store balls and instantiate all 
 
 var balls = [];
 
@@ -214,7 +214,7 @@ function loop() {
   evil.draw();
   evil.checkBounds();
   evil.collisionDetect();
-
+  //perform animation from loop()
   requestAnimationFrame(loop);
 }
 
