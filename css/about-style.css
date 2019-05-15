@@ -14,7 +14,6 @@
 .start-wrapper{
     width: 100%;
     padding: 0px 5%;
-    height: 754px;
     display: flex;
     box-sizing: border-box;
     z-index: 1;
@@ -24,11 +23,13 @@
     position: sticky;
     top: 60px;
 }
-.svg-logo-wrapper{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    height: 40%;
+#first-page{
+    height: 754px;
+}
+#second-page{
+    background-color: rgb(226, 222, 213);
+    justify-content: flex-start;
+    padding-top: 60px;
 }
 .legend-img{
     width: 50%;
@@ -40,6 +41,12 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
+}
+.svg-logo-wrapper{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    height: 40%;
 }
 .text-wrap{
     width:100%;
@@ -54,15 +61,65 @@
     font-family: 'Seravek-Normal';
     font-size: 2vw;
 }
-.legend-img img{width: 100%;}
-#second-page{
-    height: 527px;
-    background-color: rgb(226, 222, 213);
-    justify-content: flex-start;
-    padding-top: 60px;
+.legend-img img,.legend-right img{width: 100%;}
+
+@media screen and (max-width:1024px){
+    #second-page{
+        top:-300px;
+    }
+    .legend-right{
+        width: 100%;
+    }
+    .legend-img{
+        width: 100%;
+    }
+    
 }
+
 #about-game{
-    background-color: rgb(226, 222, 213);
+    background-color: rgb(0, 0, 0);
+    justify-content: space-evenly;
+    padding-top: 60px;
+    font-family: 'Seravek-Normal';
+    padding-bottom: 10%;
+    align-content: space-around;
+    color: #fff;
+}
+#about-game h1{
+    font-family: 'Apex MK2 Condensed';
+    width: 100%;
+    text-align: center;
+    font-size: 5vw;
+}
+#about-game .card{
+    width: 30%;
+}
+.card div{
+    width: 100%;
+}
+.card div img{
+    width: 100%;
+}
+.card div h3{
+    font-size: 2vw;
+}
+.card div p{
+    font-size: 1.25vw;
+}
+@media screen and (max-width:1024px){
+    #about-game{
+        top: -325px;
+    }
+    #about-game .card{
+        width: 45%;
+        padding-bottom: 5%;
+    }
+    .card div h3{
+        font-size: 3vw;
+    }
+    .card div p{
+        font-size: 2vw;
+    }
 }
 #logo-bar-1,#logo-bar-2,#logo-bar-3{
     transform: translateY(-100%);
