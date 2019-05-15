@@ -42,7 +42,7 @@ path {
 #pathfinder-text.cls-1,
 #bangalore-text.cls-1, 
 #octane-text.cls-1{
-    font-size:170px;font-family:SaucerBB, Saucer BB;
+    font-size:170px;font-family:'SaucerBB', 'Saucer BB';
 }
 
 #caustic-text .cls-5,
@@ -63,7 +63,7 @@ path {
 #lifeline-text .cls-3{fill:#3f98e5;}
 #lifeline-text .cls-5{letter-spacing:-0.057em;}
 
-#bloodhound-text.cls-2{font-size:138px;font-family:SaucerBB, Saucer BB;}
+#bloodhound-text.cls-2{font-size:138px;font-family:'SaucerBB', 'Saucer BB';}
 #bloodhound-text .cls-3{fill:#b0444c;}
 #bloodhound-text .cls-5{letter-spacing:-0.028em;}    
 
@@ -86,7 +86,7 @@ path {
 #pathfinder-text .cls-4{letter-spacing:-0.057em;}
 #pathfinder-text .cls-5{font-size:62px;}
 
-#bangalore-text.cls-1{font-size:170px;font-family:SaucerBB, Saucer BB;}
+#bangalore-text.cls-1{font-size:170px;font-family:'SaucerBB', 'Saucer BB';}
 #bangalore-text .cls-2{fill:#9a6752;}
 
 #octane-text .cls-2{fill:#6e7246;}

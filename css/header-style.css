@@ -16,6 +16,10 @@ a{
     font-family: "Seravek-Normal";
     src:url("fonts/Seravek.ttf");
 }
+@font-face{
+    font-family: 'SaucerBB';
+    src: url('fonts/SaucerBB.ttf');
+}
 header{
     position: fixed;
     width: 100%;
